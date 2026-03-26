@@ -47,10 +47,14 @@ Exceptions: Touch targets on mobile buttons must be minimum 44px height (py-2.5 
 
 | Role | Size | Weight | Line Height |
 |------|------|--------|-------------|
+| Label | 12px (text-xs) | 400 (normal) | 1.4 |
 | Body | 14px (text-sm) | 400 (normal) | 1.5 (leading-relaxed) |
-| Label | 11px (text-[11px]) | 500 (medium) | 1.4 |
-| Heading | 20px (text-xl) / 24px (text-2xl) | 700 (bold) / 800 (extrabold) | 1.2 (leading-tight) |
-| Display | 30px (text-3xl) / 48px (sm:text-5xl) | 800 (extrabold) | 1.1 (leading-tight) |
+| Heading | 20px (text-xl) | 700 (bold) | 1.2 (leading-tight) |
+| Display | 36px (text-4xl) | 700 (bold) | 1.1 (leading-tight) |
+
+Responsive scaling rules (do not introduce new base sizes):
+- Display: 36px base, scales to 48px at sm breakpoint (sm:text-5xl)
+- Heading: 20px base, scales to 24px at sm breakpoint (sm:text-2xl) where needed for section titles
 
 Additional rules:
 - Uppercase tracking-wider (letter-spacing 0.05em) for badges and status labels only
@@ -169,7 +173,7 @@ Surface hierarchy (dark theme):
 - Height: 64px desktop, 56px mobile
 - Background: #141414 (bg-card) with border-bottom border-border
 - Logo: left-aligned, "Inter World Cup" text or trophy icon + text
-- Nav links: center or right, "Painel" and "Ranking" (desktop only, text-sm font-medium)
+- Nav links: center or right, "Painel" and "Ranking" (desktop only, text-sm weight 400)
 - User menu: right-aligned, AvatarIniciais + name (desktop), AvatarIniciais only (mobile)
 - Hamburger icon: 24x24, right side on mobile, visible below sm breakpoint
 
